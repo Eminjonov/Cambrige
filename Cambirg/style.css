@@ -1,0 +1,397 @@
+/* Umumiy uslublar */
+:root {
+  --background-color: #0f1015;
+  --text-color: white;
+  --btn-bg-color: #f2994a;
+  --btn-text-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header,
+.main {
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.lang-and-login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.language-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+.theme-toggle {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.hero {
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 84.46%);
+  color: var(--btn-text-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.main img {
+  max-width: 100%;
+  height: auto;
+}
+
+#language-select {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+}
+
+.kirish-btn {
+  background: linear-gradient(45deg, #ffa500, #ff7800);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kirish-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 7px 37px 36px -16px rgba(160, 181, 3, 0.78);
+  -moz-box-shadow: 7px 37px 36px -16px rgba(160, 181, 3, 0.78);
+  box-shadow: 7px 37px 36px -16px rgba(160, 181, 3, 0.78);
+}
+
+.kirish-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Mode */
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #0f1015;
+  --btn-bg-color: #3498db;
+  --btn-text-color: white;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10px;
+  background-color: #fff;
+  flex-wrap: wrap; /* Allow elements to wrap on small screens */
+}
+
+.stats-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 180px;
+  margin: 10px;
+}
+
+.stats-box h2 {
+  font-size: 30px;
+  color: #2c3e50;
+}
+
+.stats-box p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Features container */
+.features-container {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.features-container h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.feature-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h4 {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.stat-card1,
+.stat-card2,
+.stat-card3,
+.stat-card4 {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #0f1015;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card1:hover {
+  background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 84.46%);
+}
+
+.stat-card2:hover {
+  background: linear-gradient(to right, red, yellow);
+}
+
+.stat-card3:hover {
+  background: orange;
+}
+
+.stat-card4:hover {
+  background: green;
+}
+
+.stat-card h2 {
+  font-size: 40px;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.orange {
+  background-color: #f39c12;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.why-us {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+ 
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+
+
+
+.teacher-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.teacher {
+  text-align: center;
+}
+
+.teacher img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.teacher span {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .main {
+    flex-direction: column;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-box {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .features-container {
+    padding: 20px;
+  }
+
+  .feature-card {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-box h2 {
+    font-size: 24px;
+  }
+
+  .feature-card h4 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+}
